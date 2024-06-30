@@ -1,0 +1,99 @@
+*{
+    font-family: "Nerko One", cursive;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #272b30;
+}
+header img{
+    max-height: 30vh;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.navbar-brand img{
+    max-width: 40px
+}
+nav .container{
+    padding: 14px 14px;
+    background-color: rgb(58, 73, 123) !important;
+    position: relative;
+    top: -5.5rem !important;
+}
+nav .container a{
+    color: #fff;
+}
+.active{
+    color: #09c !important;
+    transition: color 0.5s;
+}
+.nav-link:focus, .nav-link:hover{
+    color: #09c !important;
+
+}
+.card{
+    background-color: #272b30;
+    
+}
+.card .desc p{
+    max-width: 95%;
+    color: #fff;
+}
+.card h5{
+    color: #fff;
+}
+.card button{
+    color:#fff;
+    padding: 4px 4px !important;
+}
+#Home .card{
+    filter: grayscale(0.7);
+    transition: transform 0.5s, filter 0.5s 0.1s;
+}
+#Home .card:hover{
+    transform: scale(1.05); 
+    filter: grayscale(0);}
+a,p,span{
+    color: white !important;
+}
+.loading{
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: #272b30e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span.loader{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #fff;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: relative;
+}
+.loader::after{
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-left: 4px solid #ff3d00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

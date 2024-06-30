@@ -11,7 +11,7 @@ export class Ui {
                         </figure>
                         <figcaption>
                             <div class="hstack justify-content-between">
-                                <h3 class="h6 small">${data[i].title}</h3>
+                                <h3 class="h6 small text-light">${data[i].title}</h3>
                                 <span class="badge text-bg-primary p-2">Free</span>
                             </div>
                             <p class="card-text small text-center opacity-50">

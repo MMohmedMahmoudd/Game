@@ -4,7 +4,7 @@ export class Ui {
         for (let i = 0; i < data.length; i++) {
             gamesBox += `
             <div class="col-sm-12 col-md-2 col-lg-3 col-xl-3 ">
-                <div data-id="${data[i].id}" class="card h-100 bg-transparent" role="button">
+                <div data-id="${data[i].id}" class="card h-100 bg-transparent " role="button">
                     <div class="card-body">
                         <figure class="position-relative">
                             <img class="card-img-top object-fit-cover h-100" src="${data[i].thumbnail}" />
@@ -35,7 +35,7 @@ export class Ui {
             <img src="${data.thumbnail}" class="w-100" alt="image details">
         </div>
         <div class="col-md-8">
-            <h3>Title: ${data.title}</h3>
+            <h3 class="text-light">Title: ${data.title}</h3>
             <p>Category: <span class="badge text-bg-info">${data.genre}</span></p>
             <p>Platform: <span class="badge text-bg-info">${data.platform}</span></p>
             <p>Status: <span class="badge text-bg-info">${data.status}</span></p>

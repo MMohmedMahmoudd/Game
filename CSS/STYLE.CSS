@@ -19,6 +19,10 @@ nav .container{
     background-color: rgb(58, 73, 123) !important;
     position: relative;
     top: -5.5rem !important;
+    box-shadow: 0px 0px 30px 7px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 0px 0px 10px 6px rgba(0,0,0,0.52) rgba(0,0,0,0.52);
+    -moz-box-shadow: 0px 0px 20px 15px rgba(0,0,0,0.52);
+
 }
 nav .container a{
     color: #fff;
